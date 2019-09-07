@@ -1,0 +1,149 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.practise.raja</groupId>
+	<artifactId>CucumberJvmParallelPluginCucumberJunit</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>CucumberJvmParallelPluginCucumberJunit</name>
+	<description>CucumberJvmParallelPluginCucumberJunit</description>
+
+	<dependencies>
+<!-- 		<dependency>
+			<groupId>com.github.temyers</groupId>
+			<artifactId>cucumber-jvm-parallel-plugin</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+ -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>4.7.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>4.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.5.3</version>
+		</dependency>
+	</dependencies>
+
+
+
+
+	<properties>
+		<src.main.java>src/main/java</src.main.java>
+	</properties>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>${src.main.java}</directory>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src/main/java/</source>
+								<source>src/main/resources/</source>
+								<source>features</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<fork>true</fork>
+					<executable>C:\Program Files (x86)\Java\jdk1.8.0_211\bin\javac</executable>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.github.temyers</groupId>
+				<artifactId>cucumber-jvm-parallel-plugin</artifactId>
+				<version> 4.2.0</version>
+				<executions>
+					<execution>
+						<id>generateRunners</id>
+						<phase>generate-test-sources</phase>
+						<goals>
+							<goal>generateRunners</goal>
+						</goals>
+						<configuration>
+							<featuresDirectory>src/main/resources/features</featuresDirectory>
+							<glue>
+								<package>com.qa.stepdef</package>
+							</glue>
+							<outputDirectory>${project.build.directory}/generated-test-sources/cucumber</outputDirectory>
+							<cucumberOutputDir>${project.build.directory}</cucumberOutputDir>
+							<format> json </format>
+							<strict>true</strict>
+							<monochrome>false</monochrome>
+							<useTestNG>false</useTestNG>
+							<namingScheme>simple</namingScheme>
+							<namingPattern>Parallel{c}IT</namingPattern>
+							<parallelScheme>FEATURE</parallelScheme>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+			<!-- Specify a custom template for the generated sources (this is a path 
+				relative to the project base directory) -->
+			<!-- <customVmTemplate>src/test/resources/custom-runner-template.java.vm 
+				</customVmTemplate> -->
+			<!-- Specify a custom package name for generated sources. Default is no 
+				package. -->
+			<!--<packageName></packageName> <plugins> <plugin> <name>json</name> </plugin> 
+				<plugin> <name>html</name> </plugin> <plugin> <name>pretty</name> </plugin> 
+				</plugins> -->
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+                
+				<configuration>
+					<forkCount>3</forkCount>
+					<reuseForks>true</reuseForks>
+					<includes>
+						<include>**/*IT.class</include>
+					</includes>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+</project>

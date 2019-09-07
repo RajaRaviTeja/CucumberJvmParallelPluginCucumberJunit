@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6564382600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User launch the test site",
+            "match": {
+              "location": "Background.User_launch_the_test_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-05T11:14:44.126Z",
+        "before": [
+          {
+            "result": {
+              "duration": 26581298100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Test accessing elements in an frame",
+        "description": "",
+        "id": "working-with-frames;test-accessing-elements-in-an-frame",
+        "after": [
+          {
+            "result": {
+              "duration": 1500396800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#singleframe\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027WKWIN9326287\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}), userDataDir\u003dC:\\Users\\rajnakir\\AppData\\Local\\Temp\\scoped_dir14772_1441314634}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:62586}, acceptInsecureCerts\u003dfalse, browserVersion\u003d76.0.3809.132, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue}]\nSession ID: 1f0e62ba7a0037074ab0e0dbcd4bb786\n*** Element info: {Using\u003did, value\u003dsingleframe}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat com.qa.stepdef.BaseTest.getWebElement(BaseTest.java:26)\r\n\tat com.qa.stepdef.FramesTest.user_switch_to_Frame_page(FramesTest.java:27)\r\n\tat ✽.User switch to Frame page(file:/C:/D/QURATE/JUnitCucumberParallelExecutionPractise/src/main/resources/features/frames.feature:7)\r\n",
+              "duration": 149649800,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User switch to Frame page",
+            "match": {
+              "location": "FramesTest.user_switch_to_Frame_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Working with frames",
+    "description": "",
+    "id": "working-with-frames",
+    "keyword": "Feature",
+    "uri": "file:/C:/D/QURATE/JUnitCucumberParallelExecutionPractise/src/main/resources/features/frames.feature",
+    "tags": []
+  }
+]

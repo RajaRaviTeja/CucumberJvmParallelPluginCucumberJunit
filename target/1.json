@@ -1,0 +1,417 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7382505100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User launch the test site",
+            "match": {
+              "location": "Background.User_launch_the_test_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-05T11:14:43.845Z",
+        "before": [
+          {
+            "result": {
+              "duration": 26611008400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Test Alert with OKCancle buttons",
+        "description": "",
+        "id": "working-with-alerts;test-alert-with-okcancle-buttons",
+        "after": [
+          {
+            "result": {
+              "duration": 1502775000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: timeout\n  (Session info: chrome\u003d76.0.3809.132)\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027WKWIN9326287\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}), userDataDir\u003dC:\\Users\\rajnakir\\AppData\\Local\\Temp\\scoped_dir14808_278035168}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:62582}, acceptInsecureCerts\u003dfalse, browserVersion\u003d76.0.3809.132, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue}]\nSession ID: 4a102f5b30fd72c66cd40a30add5d0f7\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)\r\n\tat com.qa.stepdef.AlertsTest.user_switch_to_Alert_page(AlertsTest.java:41)\r\n\tat ✽.User switch to Alert page(file:/C:/D/QURATE/JUnitCucumberParallelExecutionPractise/src/main/resources/features/alert.feature:7)\r\n",
+              "duration": 18469118700,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User switch to Alert page",
+            "match": {
+              "location": "AlertsTest.user_switch_to_Alert_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56400,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User click  alert with okCancel option",
+            "match": {
+              "location": "AlertsTest.user_click_alert_with_okCancel_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User click  button for OKCancelAlert",
+            "match": {
+              "location": "AlertsTest.user_click_button_for_OKCancelAlert()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213100,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User should see alert displayed",
+            "match": {
+              "location": "AlertsTest.user_should_see_alert_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25700,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User dismiss the alert",
+            "match": {
+              "location": "AlertsTest.User_dismiss_the_alert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19900,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User click  alert with okCancel option",
+            "match": {
+              "location": "AlertsTest.user_click_alert_with_okCancel_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User click  button for OKCancelAlert",
+            "match": {
+              "location": "AlertsTest.user_click_button_for_OKCancelAlert()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23100,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User should see alert displayed",
+            "match": {
+              "location": "AlertsTest.user_should_see_alert_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17500,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User accept the alert",
+            "match": {
+              "location": "AlertsTest.user_accept_the_alert()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4688359500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User launch the test site",
+            "match": {
+              "location": "Background.User_launch_the_test_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-05T11:15:37.845Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16682516100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Test Simple Alert",
+        "description": "",
+        "id": "working-with-alerts;test-simple-alert",
+        "after": [
+          {
+            "result": {
+              "duration": 1502563000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: failed to parse value of getElementRegion\n  (Session info: chrome\u003d76.0.3809.132)\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027WKWIN9326287\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}), userDataDir\u003dC:\\Users\\rajnakir\\AppData\\Local\\Temp\\scoped_dir14584_28139020}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:62762}, acceptInsecureCerts\u003dfalse, browserVersion\u003d76.0.3809.132, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue}]\nSession ID: 9f236821c0aa5a38de2a5738e996b203\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)\r\n\tat com.qa.stepdef.AlertsTest.user_switch_to_Alert_page(AlertsTest.java:41)\r\n\tat ✽.User switch to Alert page(file:/C:/D/QURATE/JUnitCucumberParallelExecutionPractise/src/main/resources/features/alert.feature:18)\r\n",
+              "duration": 3813908400,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "User switch to Alert page",
+            "match": {
+              "location": "AlertsTest.user_switch_to_Alert_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18900,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User click  alert with ok option",
+            "match": {
+              "location": "AlertsTest.user_click_alert_with_ok_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User click  button",
+            "match": {
+              "location": "AlertsTest.user_click_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6900,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User should see alert displayed",
+            "match": {
+              "location": "AlertsTest.user_should_see_alert_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6800,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User accept the alert",
+            "match": {
+              "location": "AlertsTest.user_accept_the_alert()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3588181400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User launch the test site",
+            "match": {
+              "location": "Background.User_launch_the_test_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-05T11:16:04.542Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14742023600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Test Alert with textbox",
+        "description": "",
+        "id": "working-with-alerts;test-alert-with-textbox",
+        "after": [
+          {
+            "result": {
+              "duration": 1502045300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10827688500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User switch to Alert page",
+            "match": {
+              "location": "AlertsTest.user_switch_to_Alert_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 206235600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User click alert with textbox option",
+            "match": {
+              "location": "AlertsTest.User_click_alert_with_textbox_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163777900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User click button for textboxAlert",
+            "match": {
+              "location": "AlertsTest.User_click_button_for_textboxAlert()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7174500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should see alert displayed",
+            "match": {
+              "location": "AlertsTest.user_should_see_alert_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8248400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should send username",
+            "match": {
+              "location": "AlertsTest.User_should_send_username1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10008200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User accept the alert",
+            "match": {
+              "location": "AlertsTest.user_accept_the_alert()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Working with alerts",
+    "description": "",
+    "id": "working-with-alerts",
+    "keyword": "Feature",
+    "uri": "file:/C:/D/QURATE/JUnitCucumberParallelExecutionPractise/src/main/resources/features/alert.feature",
+    "tags": []
+  }
+]

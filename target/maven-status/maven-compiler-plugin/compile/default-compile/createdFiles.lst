@@ -1,0 +1,6 @@
+com\qa\stepdef\BaseTest.class
+com\qa\stepdef\Hooks.class
+com\qa\stepdef\AlertsTest.class
+com\qa\stepdef\FileUploadTest.class
+com\qa\stepdef\FramesTest.class
+com\qa\stepdef\Background.class

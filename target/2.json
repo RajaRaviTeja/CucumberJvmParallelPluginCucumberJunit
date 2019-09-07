@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18184065100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the site with fileupload",
+            "match": {
+              "location": "Background.launch_the_site_with_fileupload()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-05T11:14:44.017Z",
+        "before": [
+          {
+            "result": {
+              "duration": 26522674200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Test fileupload",
+        "description": "",
+        "id": "see-how-to-upload-a-file;test-fileupload",
+        "after": [
+          {
+            "result": {
+              "duration": 1498506300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 279042100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "upload an file",
+            "match": {
+              "location": "FileUploadTest.upload_an_file()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "See how to upload a file",
+    "description": "",
+    "id": "see-how-to-upload-a-file",
+    "keyword": "Feature",
+    "uri": "file:/C:/D/QURATE/JUnitCucumberParallelExecutionPractise/src/main/resources/features/fileupload.feature",
+    "tags": []
+  }
+]
